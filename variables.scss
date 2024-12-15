@@ -1,0 +1,48 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;700;900&display=swap');
+
+// Container Layout /
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1440px
+);
+
+// Color Palete / 
+ @import 'colors';
+
+// Font related
+$size: 0.8rem;
+$scale: 1.2;
+
+// Define Theme colors
+$copycats-theme-colors: (
+  "primary":    $primary,
+  "featured":   $pink,
+);
+
+// Links color styles
+$link-color:                             $blue;
+$link-decoration:                         none;
+$link-shade-percentage:                   20%;
+$link-hover-color:                        shift-color($link-color, $link-shade-percentage);
+$link-hover-decoration:                   null;
+
+ // export woocommerce vars as CSS vars
+ :root {
+  --woocommerce: #{$woocommerce};
+  --wc-green: #{$green};
+  --wc-red: #{$red};
+  --wc-orange: #{$orange};
+  --wc-blue: #{$blue};
+  --wc-primary: #{$woo-primary};
+  --wc-primary-text: #{$woo-primarytext};
+  --wc-secondary: #{$secondary};
+  --wc-secondary-text: #{$secondarytext};
+  --wc-highlight: #{$highlight};
+  --wc-highligh-text: #{$highlightext};
+  --wc-content-bg: #{$contentbg};
+  --wc-subtext: #{$subtext};
+}

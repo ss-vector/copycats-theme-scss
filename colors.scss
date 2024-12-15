@@ -1,0 +1,65 @@
+//  Theme Main color variables
+
+$blue:    #0d6efd !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #198754 !default;
+$teal:    #20c997 !default;
+$cyan:    #0dcaf0 !default;
+
+// social web apps/brands colors
+$clr-whatsapp:   #4fce5d;
+$clr-instagram: $orange;
+$clr-facebook:   #3b5998;
+$clr-youtube:    red;
+$clr-twitter:    #0077b5;
+
+$blog-wrapper: #dcf3e5;
+
+// Theme colors
+$primary:               $green;
+$shadow:                #222832;
+$shadow-a:              #333e48;
+$button-dark:           #2c2d33;
+$public-yellow:         #fed700; //#e8e524
+$test-color:            #f5f5f5;
+$header-orange:         #fd7820; // 
+$desaturated-blue:      hsl(224, 23%, 55%);
+$bright-blue:           hsl(245, 75%, 52%);
+$bright-blue-hover:     hsl(244, 83%, 68%);
+$dark-blue:             hsl(223, 47%, 23%);
+$new-blue:              #283d86;
+
+$cp-footer-bg:          rgba(247,247,247,1);
+$sub-footer-bg:         #e5e5e5;
+
+$cc-text-color-dark:    rgba(51,51,51,1);
+$cp-text-color-light:   #f7f7f7;
+
+$carousel-control-width: 10%;
+
+// WooCommerce CSS Variables
+
+
+ $woocommerce:   	#7F54B3 !default;
+ $green:         	#7ad03a !default;
+ $red:           	#a00 !default;
+ $orange:        	#ffba00 !default;
+ $blue:          	#2ea2cc !default;
+ 
+ $woo-primary:           #7F54B3 !default;                                    // Primary color for buttons (alt)
+ $woo-primarytext:       desaturate(lighten($woo-primary, 50%), 18%) !default;    // Text on woo-primary color bg
+ 
+ $secondary:         desaturate(lighten($woo-primary, 40%), 21%) !default;    // Secondary buttons
+ $secondarytext:     desaturate(darken($secondary, 60%), 21%) !default;   // Text on secondary color bg
+ 
+ $highlight:         adjust-hue($woo-primary, 150deg) !default;               // Prices, In stock labels, sales flash
+ $highlightext:      desaturate(lighten($highlight, 50%), 18%) !default;  // Text on highlight color bg
+ 
+ $contentbg:         #fff !default;                                     // Content BG - Tabs (active state)
+ $subtext:           #767676 !default;                                  // small, breadcrumbs etc
+ 
