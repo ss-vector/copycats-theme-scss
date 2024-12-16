@@ -1,11 +1,14 @@
 /*  Buttons 
-    @package Copycats Buttons template
+    @package Main Copycats Buttons templates
 */
 button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
 	border-style: none;
-	padding: 0; }
-	button[type="submit"] {
-		outline: none !important; }
+	padding: 0; 
+}
+
+button[type="submit"] {
+	outline: none !important; 
+}
 
 .btn, button {
   display: inline-block;
@@ -14,23 +17,29 @@ button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-mo
   border: 1px solid transparent;
   border-radius: 1.375rem; 
   text-shadow: none; }
-
-button.proceed-button{
+  
+button {
+  
+  &.proceed-button {
   width: 100%;
   border: none;
   font-weight: 700;
   font-size: $size;
   border-radius: 12px; }
-  .proceed-button {
-    background-color: $bright-blue;
-    padding: 1rem 0;
+  &.alt {
+    background-color: $button-dark;
+    border-color: $button-dark;
     color: white;
-    box-shadow: 0 20px 30px -8px #333e48; }
-    .proceed-button:hover {
-      background-color: $bright-blue-hover; }
-
-button.alt {
-  background-color: $button-dark;
-  border-color: $button-dark;
-  color: white;
+  }
 }
+
+.proceed-button {
+  background-color: $bright-blue;
+  padding: 1rem 0;
+  color: white;
+  box-shadow: 0 20px 30px -8px #333e48; 
+  &:hover {
+      background-color: $bright-blue-hover; 
+    }
+}
+
