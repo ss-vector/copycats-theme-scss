@@ -169,7 +169,7 @@ ul.navbar-nav li a {
     list-style: none; } 
 
 /* Header Menus: Bottom Bar */
-body ul.copycats-pages-menu > li > a {
+	ul.copycats-pages-menu > li > a {
 	color: rgba(34, 40, 50, 1);
 	font-size: calc($size * $scale);
 	font-weight: 500; }
@@ -184,7 +184,7 @@ body ul.copycats-pages-menu > li > a {
 			display: block;
 			position: relative;
 			padding: 11px 20px 13px;
-			color: #ffffff;
+			color: #fff;
 			font-weight: 700;
 			letter-spacing: 0.3px;
 			transition: all 0.3s ease-in !important; }

@@ -275,7 +275,7 @@ ul.top-bar {
 }
 
 /* Header Menus: Bottom Bar */
-body ul.copycats-pages-menu > li > a {
+ul.copycats-pages-menu > li > a {
   color: rgb(34, 40, 50);
   font-size: 0.96rem;
   font-weight: 500;
@@ -293,7 +293,7 @@ ul.copycats-pages-menu > li > a {
   display: block;
   position: relative;
   padding: 11px 20px 13px;
-  color: #ffffff;
+  color: #fff;
   font-weight: 700;
   letter-spacing: 0.3px;
   transition: all 0.3s ease-in !important;
@@ -327,37 +327,6 @@ ul.copycats-pages-menu > li .sub-menu {
 
 .copycats__mobile {
   display: none;
-}
-
-/* Page Wrappers */
-.carousel.pointer-event {
-  touch-action: pan-y;
-}
-
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-.carousel-inner::after {
-  display: block;
-  clear: both;
-  content: "";
-}
-
-.carousel-item {
-  position: relative;
-  display: none;
-  float: left;
-  width: 100%;
-  margin-right: -100%;
-  backface-visibility: hidden;
-  transition: transform 0.6s ease-in-out;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: 10%;
 }
 
 /* Blog Styles */

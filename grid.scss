@@ -1,7 +1,17 @@
 /* Page Wrappers */
-.carousel.pointer-event {
+.carousel {
+  position: relative;
+
+  &.pointer-event {
     touch-action: pan-y;
   }
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
   
 .carousel-inner {
     position: relative;
