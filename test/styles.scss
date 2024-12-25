@@ -36,8 +36,8 @@
 // Bootstrap Utilities API
 @import '../../bootstrap/utilities/api';
 
-/* Woocommerce Style Overrides ? */
-// @import '../../../../../../assets/copycats-theme/layout';
+/* Woocommerce Style Overrides */
+@import '../extras/wc_override.scss';
 
 // Do not include Bootstrap
 // @import '../../bootstrap/bootstrap';

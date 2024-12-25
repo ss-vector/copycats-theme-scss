@@ -16,13 +16,25 @@
 $red-featured: lighten($red, 20%) !default;
 $public-yellow-box: lighten($public-yellow, 20%) !default;
 
-.woocommerce a.button {
-    background-color: $red-featured;
-    color: white; }
-	.woocommerce .featured-img img {
-		height: 350px;
-		object-fit: contain;
-		object-position: top; } 
+.woocommerce {
+	ul {
+		list-style: none;
+	}
+	/* a.button */
+	a {
+		&.button {
+			background-color: $red-featured;
+			color: white;
+		}
+	}
+	.featured-img {
+		img {
+			height: 350px;
+			object-fit: contain;
+			object-position: top;
+		}
+	}
+}
 
 .woo_categories_menu__title {
     background-color: $red-featured;

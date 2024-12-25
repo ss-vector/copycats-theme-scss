@@ -58,6 +58,10 @@
 		background: $red; 
 		color: $cp-text-color-light; }
 
+	.nav {
+		list-style: none;
+	}
+
 	.navbar-search .form-control {
 		padding: .3em 2.134em;
 		border-top-right-radius: 0;
