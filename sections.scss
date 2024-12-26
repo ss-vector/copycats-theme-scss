@@ -57,48 +57,68 @@
 		.site-header .navbar-search .btn {
 		background: $red; 
 		color: $cp-text-color-light; }
+%nav {
+	list-style: none;
+}
 
-	.nav {
-		list-style: none;
-	}
+.nav {
+	@extend %nav;
+}
 
-	.navbar-search .form-control {
+ul.nav {
+	@extend %nav;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.navbar-search {
+	.form-control {
 		padding: .3em 2.134em;
 		border-top-right-radius: 0;
-		border-bottom-right-radius: 0; }
-	.navbar-search .input-group {
-		height: 41px; }
-		.navbar-search .input-group > div {
-			height: 100%; }
-		.navbar-search .input-group .input-group-btn {
-			// review scss function
-			font-size: 1.066em; }
-	.navbar-search .input-search-field {
+		border-bottom-right-radius: 0;
+	}
+	.input-group {
+		height: 41px;
+		> div {
+			height: 100%;
+		}
+		.input-group-btn {
+			//review function
+			font-size: 1.066em;
+		}
+	}
+	.input-search-field {
 		display: flex;
 		flex-grow: 1;
-		flex-basis: 0; }
-	.navbar-search .search-categories {
-		padding-right: 4.875em;	
-		background: white; 	}
-		.navbar-search .search-categories > select {
-			border-width: 0; }
-	.navbar-search .btn {
+		flex-basis: 0;
+	}
+	.search-categories {
+		padding-right: 4.875em;
+		background: white;
+		> select {
+			border-width: 0;
+		}
+	}
+	.btn {
 		border-top-left-radius: 0;
 		border-bottom-left-radius: 0;
 		height: 100%;
-		padding: .34em 1rem; }
+		padding: .34em 1rem; 
+	}
+}
 
-	.form-select, select {
-		display: block;
-		padding: .25rem 2.2rem .25rem .75rem;
-		width: 100%;
-		font-weight: 400;
-		line-height: 1.714;
-		background-color: white;
-		border: 1px solid #ddd;
-		border-radius: 1.375rem;
-		box-shadow: 0;
-		transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;	}
+.form-select, select {
+	display: block;
+	padding: .25rem 2.2rem .25rem .75rem;
+	width: 100%;
+	font-weight: 400;
+	line-height: 1.714;
+	background-color: white;
+	border: 1px solid #ddd;
+	border-radius: 1.375rem;
+	box-shadow: 0;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;	
+}
 
 .input-group {
 	position: relative;
@@ -111,7 +131,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	// REV
 	padding: 0.5rem .75rem;
 	margin-bottom: 0;
 	font-size: 1rem;
@@ -119,15 +138,17 @@
 	line-height: 1.25;
 	text-align: center; }
 	
-	.hot-title h5 {
-		margin: 0; 
-		letter-spacing: 0.5px;
-		font-size: 13px; }
+.hot-title h5 {
+	margin: 0; 
+	letter-spacing: 0.5px;
+	font-size: 13px; 
+}
 
-	.main-header-right {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;	}
+// Status: Review following class
+.main-header-right {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;	}
 		.main-header .main-header-right .woo_search_with_cats {
 			margin-left: auto;
 			margin-right: auto;	}
