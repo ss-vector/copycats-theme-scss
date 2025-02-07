@@ -1,6 +1,6 @@
 /*  Sections
     @package Copycats Sections templates
-    Includes: Comments, navbar, footer, copyright
+    Includes: Comments, navbar, dropdown, header, footer, copyright
 */
 
 .box-footer {
@@ -11,11 +11,13 @@
 	font-size: 15px;
 	border-top: 1px solid rgba(256, 256, 256, .1); }
 
-  .copycats-nav-row {
-	padding-top: 1rem; }
-	.copycats-nav-row .departments-menu-title {
+.copycats-nav-row {
+	padding-top: 1rem; 
+	.departments-menu-title {
 	  	border-bottom-left-radius: 0;
 	  	border-bottom-right-radius: 0; }
+}
+
   	.fs-box.card {
 		background-color: $public-yellow;  }
   	.categories-list-menu a {
@@ -30,7 +32,7 @@
 		padding: 0 calc(1.143em + 8px);
 		border-radius: .5em; }
 
-/* TopBar, Navbar */
+/* Topbar, Navbar, Dropdown */
 
 .copycats-navbar {
 	padding: 2.286em 0 1.857em; }
@@ -57,13 +59,14 @@
 		.site-header .navbar-search .btn {
 		background: $red; 
 		color: $cp-text-color-light; }
-%nav {
+
+// nav, navbar-nav class
+.nav, %nav {
 	list-style: none;
 }
 
-.nav {
-	@extend %nav;
-}
+.navbar-nav {
+	flex-direction: row !important; }
 
 ul.nav {
 	@extend %nav;
@@ -71,6 +74,50 @@ ul.nav {
 	flex-wrap: wrap;
 }
 
+.dropdown-menu {
+	@extend %nav;
+}
+
+/* Main Dropdown Menu*/
+
+.dropdown > .dropdown-menu {
+	border: 2px solid transparent;
+	border-top: none;
+	width: 100%;
+	margin: 0;
+	border-radius: 0;
+	border-bottom-left-radius: .5em;
+	border-bottom-right-radius: .5em;
+	padding: .5em 0;
+	box-shadow: none;
+	min-width: 270px;
+	top: 100% !important;
+	background-clip: padding-box;
+	background-color: $cp-footer-bg; }
+  
+	.departments-menu .dropdown > .yamm {
+	  visibility: hidden; }
+	.departments-menu .dropdown:hover > .yamm {
+	  visibility: visible;  }
+  	.departments-menu .dropdown-menu > li {
+		padding: 0 1em; }
+	.departments-menu .dropdown-menu > li > a {
+	  padding: 6.5px 0 6.5px 5px;
+	  line-height: 1.5;
+	  white-space: normal;
+	  border-bottom: 1px solid #ddd; }
+	.departments-menu .dropdown-menu > li:last-child > a {
+	  border-bottom: none; }
+	.departments-menu .dropdown-menu > li:hover > a {
+	  font-weight: 700;
+	  background-color: $test-color; }
+
+	.show-dropdown > .dropdown-menu {
+	display: block; }
+	.dropdown > .dropdown-menu.yamm {
+	box-shadow:0 2px 5px 0 rgba(0,0,0,.28) }
+
+	// navbar-search class
 .navbar-search {
 	.form-control {
 		padding: .3em 2.134em;

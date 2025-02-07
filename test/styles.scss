@@ -11,9 +11,9 @@
 
 // Include Copycats default SASS modular styles
 /* Buttons, Wordpress sections */
-
 @import '../buttons';
 @import '../sections';
+@import '../components';
 @import '../grid';
 @import '../blog';
 
@@ -31,6 +31,13 @@
 
 @import '../../bootstrap/containers';
 @import '../../bootstrap/grid';
+
+// Aditional elements
+@import '../../bootstrap/list-group';
+@import '../../bootstrap/card';
+@import '../../bootstrap/buttons';
+
+// Helpers
 @import '../../bootstrap/helpers';
 
 // Bootstrap Utilities API
@@ -41,19 +48,7 @@
 
 // Do not include Bootstrap
 // @import '../../bootstrap/bootstrap';
-
-// Copycars Custom SASS functions: Color Functions
-// Example: Shadows
-$shadow-100: tint-color($shadow, 80%); 
-$shadow-500: $shadow;
-$shadow-600: shade-color($shadow, 20%);
-$shadow-900: shade-color($shadow, 80%);
-
-@each $color, $value in $copycats-theme-colors {
-  .cc-btn-#{$color} {
-    @include button-variant($value, $value);
-  }
-}
+@import '../functions';
 
 /* Import Copycats Woocommerce Styles */
 // @import '../../../../../../assets/copycats-theme/cc-woocommerce';

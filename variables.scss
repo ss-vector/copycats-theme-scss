@@ -10,17 +10,18 @@ $container-max-widths: (
   xxl: 1440px
 );
 
-// Color Palete / 
+// Color Palete
  @import 'colors';
 
 // Font related
 $size: 0.8rem;
 $scale: 1.2;
 
-// Define Theme colors
+// Define Theme colors: not working
 $copycats-theme-colors: (
   "primary":    $primary,
-  "featured":   $pink,
+  "secondary":  $pink,
+  "special":    $whatsapp-clr, 
 );
 
 // Links color styles
