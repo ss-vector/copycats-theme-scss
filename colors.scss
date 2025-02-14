@@ -13,7 +13,6 @@ $cyan:    #0dcaf0 !default;
 
 // social web apps/brands colors
 $whatsapp-clr:   #4fce5d;
-$clr-instagram: $orange;
 $clr-facebook:   #3b5998;
 $clr-youtube:    red;
 $clr-twitter:    #0077b5;
@@ -22,6 +21,7 @@ $blog-wrapper: #dcf3e5;
 
 // Theme colors
 $primary:               $green;
+$clr-instagram:         $orange;
 $shadow:                #222832;
 $shadow-a:              #333e48;
 $button-dark:           #2c2d33;
@@ -50,6 +50,7 @@ $carousel-control-width: 10%;
  $red:           	#a00 !default;
  $orange:        	#ffba00 !default;
  $blue:          	#2ea2cc !default;
+ $dark-purple:      #995db5;
  
  $woo-primary:           #7F54B3 !default;                                    // Primary color for buttons (alt)
  $woo-primarytext:       desaturate(lighten($woo-primary, 50%), 18%) !default;    // Text on woo-primary color bg
