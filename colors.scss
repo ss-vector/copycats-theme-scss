@@ -47,10 +47,16 @@ $carousel-control-width: 10%;
 
  $woocommerce:   	#7F54B3 !default;
  $green:         	#7ad03a !default;
- $red:           	#a00 !default;
+ $dark-green:       #0d733c !default;
+ $red:           	#a00    !default;
  $orange:        	#ffba00 !default;
+ $dark-orange:      #f7941f !default;
  $blue:          	#2ea2cc !default;
  $dark-purple:      #995db5;
+ $light-purple:     #ebd4ef;
+ $light-purple-100: rgba(156,39,176,0.2);
+
+
  
  $woo-primary:           #7F54B3 !default;                                    // Primary color for buttons (alt)
  $woo-primarytext:       desaturate(lighten($woo-primary, 50%), 18%) !default;    // Text on woo-primary color bg
