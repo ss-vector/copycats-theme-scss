@@ -65,6 +65,7 @@ $carousel-control-width: 10%;
  $secondarytext:     desaturate(darken($secondary, 60%), 21%) !default;   // Text on secondary color bg
  
  $highlight:         adjust-hue($woo-primary, 150deg) !default;               // Prices, In stock labels, sales flash
+ $highlight-green:   lighten($green, 30%) !default;
  $highlightext:      desaturate(lighten($highlight, 50%), 18%) !default;  // Text on highlight color bg
  
  $contentbg:         #fff !default;                                     // Content BG - Tabs (active state)

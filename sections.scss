@@ -2,6 +2,11 @@
     @package Copycats Sections templates
     Includes: Comments, navbar, dropdown, header, footer, copyright
 */
+.site-footer {
+	h3 {
+		color: tomato;
+	}
+}
 
 .box-footer {
 	position: relative; }
