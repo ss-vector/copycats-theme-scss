@@ -4,7 +4,7 @@
 */
 .site-footer {
 	h3 {
-		color: tomato;
+		color: $tomato;
 	}
 }
 
@@ -194,6 +194,12 @@ ul.nav {
 	margin: 0; 
 	letter-spacing: 0.5px;
 	font-size: 13px; 
+}
+
+.section-title {
+	font-family: var(--copycats-font-heading-preset);
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 // Status: Review following class
