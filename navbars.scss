@@ -1,0 +1,19 @@
+/* Navbars */
+  .copycats-nav-row {
+	padding-top: 1rem; }
+	.copycats-nav-row .departments-menu-title {
+	  	border-bottom-left-radius: 0;
+	  	border-bottom-right-radius: 0; }
+  	.fs-box.card {
+		background-color: $public-yellow;  }
+  	.categories-list-menu a {
+		color: $shadow; }
+  	.departments-menu-title {
+		background-color: $red; 
+		font-weight: 700;
+		font-size: 1em;
+		display: flex;
+		height: 100%;
+		align-items: center;
+		padding: 0 calc(1.143em + 8px);
+		border-radius: .5em; }

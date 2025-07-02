@@ -1,0 +1,36 @@
+/* Containers and Wrappers */
+
+.primary-container {
+	padding: 25px 25px;	
+}
+
+// Main Header Image Widget Display
+
+.cover-display {
+	background-size: cover;
+	background-position: center;
+	height: 450px; 
+	display: block; 
+	// background: linear-gradient(132deg, rgb(255, 0, 0) 0.00%, rgb(255, 213, 0) 100.00%);
+}
+
+// Inputs
+
+.input-group {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	width: 100%; }
+
+.input-group-addon {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	// REV
+	padding: 0.5rem .75rem;
+	margin-bottom: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.25;
+	text-align: center; }
