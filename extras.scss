@@ -127,6 +127,7 @@
     */
    ul.products {
      clear: both;
+     list-style-type: none;
  
      @include clearfix();
  
