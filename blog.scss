@@ -1,8 +1,47 @@
-/* Blog Styles */
+/* Single Post & Blog Styles */
+
+.site-content {
+    .content-grid{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+.content-grid{
+    display: grid;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
 .blog {
     .main-wrapper {
         background: $blog-wrapper; }
+
+}
+
+.featured-card {
+    overflow: hidden;
+    flex-direction: column;
+    border-top: none;
+    margin-bottom: 0;
+    position: relative;
+    width: 100%;
+    color: $text-color-light;
+    &.large-block{
+        display: flex;
+        &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, .35) 55%, rgba(0, 0, 0, 0.50) 75%);
+        }
     }
+}
+
+
 .single_post_layout {
     padding: 39px 38px 40px;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
