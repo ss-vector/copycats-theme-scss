@@ -1,90 +1,129 @@
 /* Single Post & Blog Styles */
 
-.site-content {
-    .content-grid{
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-}
-
-.content-grid{
-    display: grid;
-    column-gap: 10px;
-    row-gap: 20px;
-}
-
-.blog {
-    .main-wrapper {
-        background: $blog-wrapper; }
-
-}
-
 .featured-card {
-    overflow: hidden;
-    flex-direction: column;
-    border-top: none;
-    margin-bottom: 0;
-    position: relative;
-    width: 100%;
-    color: $text-color-light;
     &.large-block{
         display: flex;
-        &::after{
-            content: "";
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, .35) 55%, rgba(0, 0, 0, 0.50) 75%);
+        height: 400px;
         }
     }
-}
 
-
-.single_post_layout {
-    padding: 39px 38px 40px;
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-    margin: 0 0 30px;
-    border-top: solid 1px $sub-footer-bg;
-    h1 {
-        padding-bottom: 30px; }
+@media (min-width: 576px) {
+    .site-content {
+        .content-grid{
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
     }
 
-.single-post-title {
-    padding-top: 20px;
-}
+    .content-grid{
+        display: grid;
+        column-gap: 10px;
+        row-gap: 20px;
+    }
 
-// Headers and titles
-.copycats_news_list {
-    width: 100%;
-    margin: 0 0 30px;
-    background-color: #fff;
-    padding: 40px 32px;
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-    transition: .3s ease; 
-    &:hover {
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); }
-    .blog-entry-title h2 {
-        margin-bottom: 20px;
-        font-size: 33px;
-        line-height: 35px;	}
-    .read-more {
-        display: inline-block;
-        vertical-align: top;
-        padding: 10px 30px;
-        font-size: 11px;
+    .blog {
+        .main-wrapper {
+            background: $blog-wrapper; }
+
+    }
+
+    .card-thumbnail {
+        img {
+            width: 100%;
+            height: auto; } 
+        }
+
+    .featured-card {
+        overflow: hidden;
+        flex-direction: column;
+        border-top: none;
+        margin-bottom: 0;
+        position: relative;
+        width: 100%;
+        color: $text-color-light;
+        .featured-content {
+            z-index: 1;
+        }
+        &.large-block{
+            display: flex;
+            height: 655px;
+            &::after{
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, .35) 55%, rgba(0, 0, 0, 0.50) 75%);
+            }
+        }
+    }
+
+    .newsletter-categories {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .mini-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // post tags
+    .tag {
+        background-color: black;
+        padding: 0 10px 0 10px;
+        color: white;
+        font-size: 12px;
         line-height: 22px;
-        color: #474747;
-        border: 1px solid #474747;
-        border-radius: 26px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        border-color: #0d6efd;
-        color: #0d6efd; 
-        &:hover {
-            background-color: #0d6efd;
-            border-color: #0d6efd;
-            color: #fff; }
-        }
+        border-radius: 40px;
     }
+
+    .single_post_layout {
+        padding: 39px 38px 40px;
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+        margin: 0 0 30px;
+        border-top: solid 1px $sub-footer-bg;
+        h1 {
+            padding-bottom: 30px; }
+    }
+
+    .single-post-title {
+        padding-top: 20px;
+    }
+
+    // Headers and titles
+    .copycats_news_list {
+        width: 100%;
+        margin: 0 0 30px;
+        background-color: #fff;
+        padding: 40px 32px;
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+        transition: .3s ease; 
+        &:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); }
+        .blog-entry-title h2 {
+            margin-bottom: 20px;
+            font-size: 33px;
+            line-height: 35px;	}
+        .read-more {
+            display: inline-block;
+            vertical-align: top;
+            padding: 10px 30px;
+            font-size: 11px;
+            line-height: 22px;
+            color: #474747;
+            border: 1px solid #474747;
+            border-radius: 26px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-color: #0d6efd;
+            color: #0d6efd; 
+            &:hover {
+                background-color: #0d6efd;
+                border-color: #0d6efd;
+                color: #fff; }
+            }
+    }
+}
