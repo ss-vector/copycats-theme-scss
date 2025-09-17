@@ -4,20 +4,36 @@
 	padding: 2.286em 0 1.857em; }
 	
   .copycats-nav-row {
-	padding-top: 1rem; }
+	padding-top: 1rem; 
 	.copycats-nav-row .departments-menu-title {
 	  	border-bottom-left-radius: 0;
-	  	border-bottom-right-radius: 0; }
-  	.fs-box.card {
+	  	border-bottom-right-radius: 0; 
+		}
+	}
+
+	.fs-box.card {
 		background-color: $public-yellow;  }
-  	.categories-list-menu a {
-		color: $shadow; }
+  	
+	.categories-list-menu {
+		& a {
+			color: $shadow; 
+		}
+
+	}
+
   	.departments-menu-title {
 		background-color: $red; 
 		font-weight: 700;
-		font-size: 1em;
+		font-size: calc($size * 1.25);
 		display: flex;
 		height: 100%;
 		align-items: center;
 		padding: 0 calc(1.143em + 8px);
-		border-radius: .5em; }
+		border-radius: .5em;
+		& span {
+			color: $text-color-light;
+			text-decoration: none;
+			width: 100%;
+			display: block;
+		}
+	}

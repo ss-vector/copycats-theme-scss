@@ -25,17 +25,6 @@
 
   	.fs-box.card {
 		background-color: $public-yellow;  }
-  	.categories-list-menu a {
-		color: $shadow; }
-  	.departments-menu-title {
-		background-color: $red; 
-		font-weight: 700;
-		font-size: 1em;
-		display: flex;
-		height: 100%;
-		align-items: center;
-		padding: 0 calc(1.143em + 8px);
-		border-radius: .5em; }
 
 /* Topbar, Navbar, Dropdown */
 
@@ -43,10 +32,11 @@
 
 .site-header {
 	position: relative;
-	background-color: var(--wp--preset--color--luminous-vivid-amber);
-	z-index: 999; }
-	.site-header .top-bar {
-		text-align: center; } 	
+	background-color: var(--wc-green);
+	z-index: 999; 
+	.top-bar {
+		text-align: center; } 
+	}
 	.site-header .top-bar > * {
 		color: $cc-text-color-dark; }
 		.site-header .top-bar-menu .menu-item {
@@ -67,6 +57,23 @@
 // nav, navbar-nav class
 .nav, %nav {
 	list-style: none;
+}
+
+/* Navbars */
+ul.navbar-nav li {
+  font-size: calc($size * $scale * 1.25);
+  line-height: 19px;
+  letter-spacing: 0.4px; }
+  ul.top-bar {
+    list-style: none; } 
+
+.cc-nav-item {
+	& a {
+		font-size: calc($size * 1.5);
+		text-decoration: none;
+		color: $text-color-light;
+		margin-left: 20px;
+	}
 }
 
 .navbar-nav {
@@ -99,10 +106,13 @@ ul.nav {
 	background-clip: padding-box;
 	background-color: $cp-footer-bg; }
   
-	.departments-menu .dropdown > .yamm {
-	  visibility: hidden; }
-	.departments-menu .dropdown:hover > .yamm {
-	  visibility: visible;  }
+	.departments-menu {
+		.dropdown > .yamm {
+	  		visibility: hidden;	}
+		.dropdown:hover > .yamm {
+	  		visibility: visible;  }
+	}
+	
   	.departments-menu .dropdown-menu > li {
 		padding: 0 1em; }
 	.departments-menu .dropdown-menu > li > a {
@@ -120,6 +130,24 @@ ul.nav {
 	display: block; }
 	.dropdown > .dropdown-menu.yamm {
 	box-shadow:0 2px 5px 0 rgba(0,0,0,.28) }
+
+	// Thumbnail Sections
+		.thumbnail-section {
+			position: relative;
+			& span{
+				z-index: 1;
+			}
+			&::after {
+				content: "";
+				position: absolute;
+				display: block;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				background: $main-gradient;;
+			 	}
+			}
 
 	// navbar-search class
 .navbar-search {
@@ -242,13 +270,7 @@ ul.nav {
     border: 2px solid rgba(81, 203, 238, 1);
     }
 
-/* Navbars */
-ul.navbar-nav li a {
-  font-size: calc($size * $scale);
-  line-height: 19px;
-  letter-spacing: 0.4px; }
-  ul.top-bar {
-    list-style: none; } 
+
 
 /* Header Menus: Bottom Bar */
 	ul.copycats-pages-menu > li > a {
